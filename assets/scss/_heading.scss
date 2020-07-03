@@ -1,0 +1,72 @@
+/* 3. heading */
+.section-title {
+    @media #{$md}{
+       margin-left: 0;
+       margin-right: 0;
+    }
+    @media #{$xs}{
+       margin-left: 0;
+       margin-right: 0;
+    }
+    & h5 {
+        color: $theme-color;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 18px;
+        & span {
+            height: 2px;
+            width: 60px;
+            background: $theme-color;
+            display: inline-block;
+            position: relative;
+            top: -3px;
+            margin: 0 10px;
+            @media #{$xs}{
+               display: none;
+            } 
+        }
+    }
+    & h2 {
+        font-size: 48px;
+        margin-bottom: 0;
+        line-height: 1.2;
+        @media #{$lg}{
+            font-size: 45px;
+        }
+        @media #{$sm}{
+            font-size: 30px;
+        }
+        @media #{$xs}{
+            font-size: 34px;
+            line-height: 1.1;
+        }
+        @media #{$md}{
+            font-size: 42px;
+        }
+    }
+    & p {
+        margin-top: 20px;
+        margin-bottom: 0;
+        @media #{$lg}{
+            margin-right: 0;
+        }
+        @media #{$md}{
+            margin-right: 0;
+        }
+        @media #{$xs}{
+            margin-right: 0;
+        }
+    }
+}
+.white-title{
+    & h2{
+        color:$white;
+    }
+    & p{
+        color:$white;
+    }
+}
+
+
+
+

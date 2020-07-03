@@ -1,0 +1,88 @@
+/* 4. btn */
+.c-btn {
+	backface-visibility: hidden;
+	border-radius: 5px;
+	color: $white;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 1;
+	padding: 22px 30px 22px 30px;
+	position: relative;
+	text-align: center;
+	text-transform: capitalize;
+	transform: translateZ(0px);
+	transition: .3s;
+	transition-property: color;
+	background: $theme-color;
+	font-weight: 500;
+	& i{
+		font-size: 15px;
+		margin-left: 16px;
+		transition: 0.3s;
+		position: relative;
+		top: 1px;
+	}
+	&:hover {
+		color: $white;
+		& i{
+			transform: translateX(5px);
+		}
+	}
+	&::after{
+		background: #0D1F35;
+		border-radius: 5px;
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: scaleX(0);
+		transform-origin: 0 50% 0;
+		transition:.3s;
+		transition-property: transform, -webkit-transform;
+		transition-timing-function: ease-out;
+		z-index: -1;
+	}
+	&:hover{
+		&::after{
+			transform: scaleX(1);
+		}
+	}
+}
+.white-border-btn{
+	background: none;
+	border: 2px solid $white;
+	transition: .3s;
+	color:$white;
+	padding: 16px 26px 16px 20px;
+	&:hover{
+		background: $white;
+		color:$theme-color;
+		border-color:$white;
+	}
+	&::after{
+		background: $white;
+	}
+	&:hover{
+		&::after{
+			transform: scaleX(1);
+		}
+	}
+}
+.white-btn{
+	background: none;
+	border: 2px solid $white;
+	transition: .3s;
+	color:$white;
+	&:hover{
+		color:$theme-color;
+		border-color:$white;
+	}
+	
+}
+
+button{
+	transition: .3s;
+}
+

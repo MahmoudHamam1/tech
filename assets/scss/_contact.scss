@@ -1,0 +1,265 @@
+/* 14. contact */
+.contact-us-area{
+    background: #f7fbff;
+}
+.contact-bg-img {
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 50%;
+    background-position: center center;
+    @media #{$md}{
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+    @media #{$xs}{
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+}
+.contact-us-wrapper {
+    padding: 75px 0 80px 84px;
+    @media #{$lg}{
+        padding: 75px 0 80px 30px;
+    }
+    @media #{$md}{
+        padding: 75px 0 80px 0;
+    }
+    @media #{$xs}{
+        padding: 75px 0 80px 0;
+    }
+}
+.contact-us-title{
+    & h2{
+        font-size: 48px;
+        margin-bottom: 9px;
+    }
+    & p{
+        margin-bottom: 0;
+    }
+}
+.contacts-us-form {
+    & input{
+        border: 2px solid #ededed;
+        height: 70px;
+        margin-bottom: 30px;
+        padding: 0 28px;
+        width: 100%;
+        font-size: 16px;
+		color: $black;
+		font-weight: 400;
+        border-radius: 5px;
+        background: none;
+    }
+    & textarea{
+        border: 2px solid #ededed;
+        height: 150px;
+        margin-bottom: 30px;
+        padding: 28px;
+        width: 100%;
+        font-size: 16px;
+		color: $black;
+		font-weight: 400;
+        border-radius: 5px;
+        background: none;
+    }
+}
+.contacts-us-form input:focus{border-color:$theme-color}
+.contacts-us-form textarea:focus{border-color:$theme-color}
+#contacts-us-form input::-moz-placeholder {
+    font-size: 16px;
+    color: $black;
+    font-weight: 400;
+}
+#contacts-us-form input::placeholder {
+    font-size: 16px;
+    color: $black;
+    font-weight: 400;
+}
+#contacts-us-form textarea::-moz-placeholder {
+    font-size: 16px;
+    color: $black;
+    font-weight: 400;
+}
+#contacts-us-form textarea::placeholder {
+    font-size: 16px;
+    color: $black;
+    font-weight: 400;
+}
+.contacts-icon{
+    position:relative;
+}
+.contacts-icon::after {
+	position: absolute;
+	content: "";
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 700;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	right: 25px;
+	color: $theme-color;
+	top: 22px;
+}
+.contactss-message::after {
+    content: "\f303";
+}
+.contactss-name::after {
+    content: "\f007";
+}
+.contactss-email::after {
+    content: "\f0e0";
+}
+.contactss-website::after {
+    content: "\f0ac";
+}
+.contacts-us-form-button button.c-btn {
+	padding: 18px 30px;
+	border: none;
+	width: 100%;
+}
+// style-2
+.contact-address-link li {
+    margin-bottom: 30px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    background: $white;
+    padding: 40px 30px;
+    overflow: hidden;
+    @media #{$lg}{
+        padding: 40px 20px;
+    }
+    @media #{$md}{
+        padding: 40px 20px;
+    }
+    &:last-child{margin-bottom: 0;}
+}
+.contact-address-icon{
+    @media #{$lg}{
+        margin-right: 15px;
+    }
+    @media #{$md}{
+        margin-right: 15px;
+    }
+    & i{
+        height: 85px;
+        width: 85px;
+        line-height: 85px;
+        text-align: center;
+        background: $theme-color;
+        color: $white;
+        font-size: 35px;
+        border-radius: 50%;
+        @media #{$md}{
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            font-size: 25px;
+        }
+    }
+}
+.contact-address-text{
+    padding-top: 12px;
+    overflow: hidden;
+    & h4{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    & span{
+        font-size: 16px;
+	    font-weight: 400;
+    }
+}
+.contacts-form {
+    & input{
+        border: 2px solid #ececec;
+        height: 70px;
+        margin-bottom: 30px;
+        padding: 0 28px;
+        width: 100%;
+        font-size: 15px;
+		color: $body-text-color;
+		font-weight: 500;
+		border-radius: 5px;
+    }
+    & textarea{
+        border: 1px solid #ececec;
+        height: 170px;
+        margin-bottom: 30px;
+        padding: 28px;
+        width: 100%;
+        font-size: 15px;
+		color: $body-text-color;
+		font-weight: 500;
+		border-radius: 5px;
+    }
+}
+.contacts-form input:focus{border-color:$theme-color}
+.contacts-form textarea:focus{border-color:$theme-color}
+#contacts-form input::-moz-placeholder {
+	font-size: 15px;
+	color: $body-text-color;
+	font-weight: 500;
+}
+#contacts-form input::placeholder {
+	font-size: 15px;
+	color: $body-text-color;
+	font-weight: 500;
+}
+#contacts-form textarea::-moz-placeholder {
+	font-size: 15px;
+	color: $body-text-color;
+	font-weight: 500;
+}
+#contacts-form textarea::placeholder {
+	font-size: 15px;
+	color: $body-text-color;
+	font-weight: 500;
+}
+.contacts-icon{
+    position:relative;
+}
+.contacts-icon::after {
+	position: absolute;
+	content: "";
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 700;
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	right: 25px;
+	color: $theme-color;
+	top: 22px;
+}
+.contactss-message::after {
+    content: "\f303";
+}
+.contactss-name::after {
+    content: "\f007";
+}
+.contactss-email::after {
+    content: "\f0e0";
+}
+.contactss-website::after {
+    content: "\f0ac";
+}
+.contactss-subject::after {
+    content: "\f02e";
+}
+.contacts-us-form-button .btn{
+		padding: 23px 74px 25px;
+}
+.contacts-form-button button.c-btn{border: none;}
+// map
+.map-wrapper{
+    & iframe{
+        height: 500px;
+        width: 100%;
+        border: 0;
+    }
+}

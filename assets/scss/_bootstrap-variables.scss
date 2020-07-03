@@ -1,0 +1,34 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+
+// Font Family
+$rubik: 'rubik';
+$heebo: 'heebo';
+
+// Colors ---------------
+$white: #ffffff;
+$black: #26364a;
+$green-bg:#C5F4E0; 
+$blue: #0b4b66;
+$blue-soft: #005376;
+$grey:#eafafb;
+$grey-2:#f7fbff;
+$grey-soft:#ebeee4;
+$theme-color: #fa6400;
+$body-text-color: #565872;
+$hr-border-color:#eceff8;
+
+// Heading Color
+$heading-color: #0d1f35;
+
+// Responsive Variables
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';

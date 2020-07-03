@@ -1,0 +1,77 @@
+/* 16. breadcrumb */
+.breadcrumb-area {
+    background-position: center center;
+    background-size: cover; 
+    padding-top: 325px;
+    @media #{$md}{
+        padding-top: 255px;
+        padding-bottom: 115px;
+    }
+    @media #{$xs}{
+        padding-top: 270px;
+        padding-bottom: 115px;
+    }
+}
+.breadcrumb-text {
+    position: relative;
+    z-index: 1;
+    & > h1{
+        font-size: 90px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+        line-height: 1;
+        color: $white;
+        font-weight: 700;
+        @media #{$lg}{
+            font-size: 80px;
+        }
+        @media #{$md}{
+            font-size: 60px;
+        }
+        @media #{$xs}{
+            font-size: 36px;
+        }
+    }
+ }
+.breadcrumb-menu{
+    & li{
+        display: inline-block;
+        position: relative;
+        padding: 0 15px;
+        &::before {
+            content: "\f105";
+            display: inline-block;
+            padding-bottom: 0;
+            position: absolute;
+            top: 0;
+            left: -5px;
+            font-family: "Font Awesome 5 Pro";
+            color: $white;
+            font-size: 18px;
+            @media #{$xs}{
+                font-size: 16px;
+            }
+        }
+        &:first-child::before {
+            display: none; }
+        & a{
+            color: $theme-color;
+            font-size: 18px;
+            text-transform: capitalize;
+            transition: all 0.3s ease 0s;
+            font-weight: 500; 
+            @media #{$xs}{
+                font-size: 16px;
+            }
+        }
+        & span{
+            color: $white;
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 500;
+            @media #{$xs}{
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+/* 14. features */
+.fe-padding{
+    margin-top: -95px;
+    @media #{$md}{
+       margin-top: 0;
+       padding-top: 120px;
+    }
+    @media #{$xs}{
+       margin-top: 0;
+       padding-top: 120px;
+    }
+}
+.single-features {
+	background-size: cover;
+	background-position: center center;
+	padding: 58px 48px 50px 50px;
+    border-radius: 5px;
+    @media #{$lg}{
+        padding: 58px 38px 50px 38px;
+    } 
+    @media #{$xs}{
+        padding: 58px 30px 50px 30px;
+    } 
+}
+.features-title {
+    & h5 {
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        font-family: $heebo;
+        & span {
+            height: 2px;
+            width: 60px;
+            background: $white;
+            display: inline-block;
+            position: relative;
+            top: -3px;
+            margin: 0 10px; 
+        }
+    }
+    & h2 {
+        font-size: 36px;
+        margin-bottom: 0;
+        line-height: 1.2;
+        color: $white; 
+    }
+}
+.features-icon-img{
+    margin-right: 35px;
+    margin-top: 10px;
+}
+.features-link {
+	margin-top: 36px;
+    margin-bottom: 45px;
+    & ul{
+        & li{
+            padding-bottom: 25px;
+            &:last-child{
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+.features-wrapper{
+    background: $white;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    padding: 40px 32px 27px;
+    border-radius: 5px;
+    @media #{$lg}{
+        padding: 40px 25px 27px;
+    } 
+    @media #{$xs}{
+        padding: 40px 20px 27px;
+    } 
+}
+  
+.inner-features{
+    overflow: hidden;
+}
+.features-info{
+    overflow: hidden;
+    & h2{
+        color: $white;
+        font-size: 36px;
+    }
+    & span{
+        color:$white;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $heebo;
+    }
+}
+.features-text{
+    & p{
+        margin-top: 22px;
+    }
+}
+.features-content{
+    overflow: hidden;
+    padding-top: 21px;
+    & h3{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+}
+.b-button{
+    & a{
+        color:$theme-color;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-family: $heebo;
+        display: inline-block;
+        & i{
+            position: relative;
+            left: 9px;
+            transition: .3s;
+            font-size: 16px;
+            top:1px;
+        }
+    }
+    &:hover{
+        & i{
+            left: 15px;
+        }
+    }
+}
+.b-02-button{
+ margin-top: 28px;
+}

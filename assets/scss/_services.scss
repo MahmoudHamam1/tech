@@ -1,0 +1,380 @@
+/* 7. services */
+.services-area {
+	background-size: cover;
+	background-position: center center;
+}
+.ser-02{
+    @media #{$xs}{
+        padding-top: 120px;
+    }
+}
+
+.services-wrapper{
+    background: $white;
+    padding: 50px 43px 43px;
+    transition: .3s;
+    border: 4px solid transparent;
+    &:hover{
+        border-color: #f5841a;
+    }
+    @media #{$lg}{
+        padding: 50px 30px 43px;
+    }
+    @media #{$xs}{
+        padding: 50px 20px 43px;
+    }
+}
+.services-text{
+    margin-top: 46px;
+    & h3{
+        font-size: 24px;
+        margin-bottom: 19px;
+    }
+    & p{
+        margin-bottom: 0;
+    }
+}
+// our-services
+.our-services-area {
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.ser-01{
+    @media #{$laptop}{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    @media #{$lg}{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    @media #{$md}{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    @media #{$xs}{
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.our-services-wrapper{
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+}
+.our-services-img{
+    overflow: hidden;
+    & img{
+        width:100%;
+        transition: .3s;
+    }
+}
+.our-services-wrapper:hover .our-services-img img{transform:scale(1.1) ;}
+.our-services-text{
+    background: $white;
+    padding: 33px 62px 46px 35px;
+    & h3{
+        font-size: 24px;
+        color:$blue;
+    }
+    & p{
+
+    }
+}
+.services-list {
+    & ul{
+        & li {
+            font-size: 16px;
+            color: $heading-color;
+            padding-bottom: 14px;
+            padding-left: 38px;
+            position: relative;
+            font-weight: 400;
+            &:last-child{padding-bottom: 0;}
+            &::before {
+                position: absolute;
+                left: 0;
+                content: "\f00c";
+                font-family: "Font Awesome 5 Pro";
+                top: 1px;
+                color: $theme-color;
+                height: 25px;
+                width: 25px;
+                background: #fef2e8;
+                line-height: 25px;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+    }
+}
+.services-active {
+    & button.slick-arrow {
+        background: #26364a;
+        height: 50px;
+        width: 50px;
+        right: 277px;
+        font-size: 16px;
+        content: "";
+        top: -138px;
+        transition: 0.3s;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        color: $theme-color;
+        cursor: pointer;
+        border: none;
+        transition: .3s;
+        @media #{$laptop}{
+            right: 39px;
+        }
+        @media #{$lg}{
+            right: 73px;
+        }
+        &:hover{
+           background: $theme-color;
+           color: $white;
+        }
+    }
+    & button.slick-next{
+        right: 345px;
+        @media #{$laptop}{
+            right: 105px;
+        }
+        @media #{$lg}{
+            right: 137px;
+        }
+    }
+}
+.services-02-active {
+    & button.slick-arrow {
+        background: #feefe5;
+        height: 50px;
+        width: 50px;
+        right: 15px;
+        font-size: 16px;
+        content: "";
+        top: -138px;
+        transition: 0.3s;
+        position: absolute;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        color: $theme-color;
+        cursor: pointer;
+        border: none;
+        transition: .3s;
+        &:hover{
+           background: $theme-color;
+           color: $white;
+        }
+    }
+    & button.slick-next{
+        right: 82px;
+    }
+}
+.project-button{
+    position: absolute;
+	right: 25px;
+    bottom: 28px;
+    @media #{$laptop}{
+        right: 15px;
+    }
+    @media #{$lg}{
+        right: 15px;
+    }
+    @media #{$md}{
+        right: 15px;
+    }
+    @media #{$xs}{
+        right: 15px;
+    }
+    & a{
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        background: #feefe5;
+        display: inline-block;
+        color: $theme-color;
+        border-radius: 50%;
+        transition: .3s;
+        &:hover{
+            background: $white;
+        }
+    }
+}
+// services-details
+.services-details-wrapper{
+    background: $white;
+    padding: 50px 30px;
+    border-radius: 5px;
+}
+.services-details-text{
+    & h2{
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+    & p{
+        margin-bottom: 32px
+    }
+}
+.services-details-img{
+    & img{
+        width: 100%;
+    }
+}
+.services-details-info{
+    & p{
+        margin-bottom: 0;
+    }
+}
+.services-details-content{
+    margin-top: 15px;
+    @media #{$lg}{
+        margin-top: 0;
+    } 
+    @media #{$md}{
+        margin-top: 0;
+    } 
+    @media #{$xs}{
+        margin-top: 0;
+    } 
+    & h3{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    & p{
+        margin-bottom: 24px;
+    }
+}
+
+.services-details-list {
+    & ul{
+        & li {
+            font-size: 16px;
+            color: $body-text-color;
+            padding-bottom: 14px;
+            padding-left: 38px;
+            position: relative;
+            font-weight: 400;
+            &:last-child{padding-bottom: 0;}
+            &::before {
+                position: absolute;
+                left: 0;
+                content: "\f058";
+                font-family: "Font Awesome 5 Pro";
+                top: 1px;
+                color: $theme-color;
+            }
+        }
+    }
+}
+// services-details-widget
+.widget {
+	padding: 30px;
+	background-color: $white;
+    box-shadow: 0px 8px 16px 0px rgba(200, 183, 255, 0.2);
+    border-radius: 5px;
+}
+.widget-2{box-shadow: none;}
+.widget-title {
+	font-size: 22px;
+	position: relative;
+	display: block;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ededed;
+    margin-bottom: 35px;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 3px;
+        left: 0;
+        bottom: -2px;
+        background: $theme-color;
+    }
+}
+.service-list {
+    & li{
+        margin-bottom: 7px;
+        & a {
+            background: #f6f6f6;
+            display: block;
+            padding: 17px 30px;
+            color: #666;
+            position: relative;
+            font-weight: 500;
+            &:hover{
+                background: $theme-color;
+                color: #fff;
+            }
+            &::before {
+                content: "";
+                display: inline-block;
+                padding-bottom: 0;
+                position: absolute;
+                top: 15px;
+                right: 30px;
+                font-family: "Font Awesome 5 Pro";
+                color: #666;
+                font-size: 18px;
+                transition: .3s;
+            }
+            &:hover::before{
+                color: $white;
+            }
+        }
+    }
+}
+.cat-link{
+    & li{
+        padding-bottom: 16px;
+        &:last-child{padding-bottom: 0;}
+        & a{
+            color: #565872;
+            font-weight: 400;
+            font-size: 16px;
+            transition: .3s;
+            &:hover{color:$theme-color;}
+            & i{
+                color: $theme-color;
+                padding-right: 12px;
+            }
+        }
+    }
+}
+.search-form {
+    position: relative;
+    & input {
+        width: 100%;
+        height: 80px;
+        border: 1px solid #d7d7d7;
+        padding: 0 20px;
+        font-size: 18px;
+        color: $black;
+        font-weight: 600;
+        &::-moz-placeholder {
+            font-size: 16px;
+            color: $black;
+        }
+        &::placeholder {
+            font-size: 16px;
+            color: $black;
+        }
+    }
+    & button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: $theme-color;
+        padding: 0 30px;
+        color: $white;
+        line-height: 60px;
+        border: 0;
+        &:hover {
+            background: $theme-color;
+        }
+    }
+
+}
